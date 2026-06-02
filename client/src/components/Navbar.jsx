@@ -27,12 +27,12 @@ const Navbar = ({ user, setUser }) => {
     }
   };
   return (
-    <div className="sticky top-0 z-50 backdrop-blur-xl bg-white border-b border-gray-300">
+    <div className="sticky top-0 z-50 backdrop-blur-xl bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         <div
           onClick={() => navigate("/")}
           className="flex items-center gap-2.5 cursor-pointer"
-          r
+          
         >
           <Logo />
         </div>

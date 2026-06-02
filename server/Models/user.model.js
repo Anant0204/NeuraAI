@@ -47,8 +47,8 @@ const userSchema = new mongoose.Schema(
     },
     theme: {
       type: String,
-      enum: ["Light", "Dark", "Colorful", "Neon"],
-      default: "Light",
+      enum: ["dark", "ocean", "neon", "midnight" , "emerald", "glass"],
+      default: "dark",
     },
     enableVoice: {
       type: Boolean,
@@ -88,7 +88,7 @@ const userSchema = new mongoose.Schema(
       type: Date,
       default: null,
     },
-    isSetupCOmplete: {
+    isSetupComplete: {
       type: Boolean,
       default: false,
     },

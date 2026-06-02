@@ -19,6 +19,7 @@ try{
     assistantName,
     businessName,
     businessType,
+    businessDescription,
     tone, 
     theme,
     pages,
