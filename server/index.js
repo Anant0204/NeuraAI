@@ -13,7 +13,7 @@ const app = express();
 
 const privateCors = 
 cors({
-  origin:["http://localhost:5173"],
+  origin:["https://neuraai-7tzi.onrender.com"],
 
   credentials:true
 });
