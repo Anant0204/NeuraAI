@@ -18,7 +18,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchCurrentUser = async () => {
+    const fetchMe = async () => {
       try {
         const res = await axios.get(serverURL + "/api/user/current-user", {
           withCredentials: true,
@@ -30,7 +30,7 @@ const App = () => {
         setLoading(false);
       }
     };
-    fetchCurrentUser();
+    fetchMe();
   }, []);
   return (
     <>
@@ -48,7 +48,7 @@ const App = () => {
                   path="/builder"
                   element={<Builder user={user} setUser={setUser} />}
                 />
-                <Route path="/billing" element={<Billing user={user} />} />
+                <Route path="/billing" element={<Billing user={user} setUser={setUser} />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </ProtectedRoute>

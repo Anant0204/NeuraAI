@@ -71,7 +71,7 @@ const userSchema = new mongoose.Schema(
       enum: ["active", "inactive", "quota_exceeded"],
       default: "inactive",
     },
-    total: {
+    totalMessages: {
       type: Number,
       default: 0,
     },
