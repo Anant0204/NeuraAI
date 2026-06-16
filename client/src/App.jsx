@@ -11,7 +11,7 @@ import Builder from "./pages/Builder";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Toaster } from "react-hot-toast";
 
-export const serverURL = "http://localhost:3000";
+export const serverURL = "https://neuraaiserver.onrender.com";
 export const CLIENT_URL = "http://localhost:5173";
 const App = () => {
   const [user, setUser] = useState(null);
